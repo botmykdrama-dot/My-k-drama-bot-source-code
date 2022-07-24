@@ -2,7 +2,7 @@ class script(object):
     START_TXT = """
 Hello {}, <b>I'm My K-Drama Bot</b>
 
-Here you can download Koren Tv series. you can search Dramas Via inline. I can also add filters in telegram groups.  Just add me to your groups and enjoy 🎊
+Here you can download Korean Tv series. you can search Dramas Via inline. I can also add filters in telegram groups.  Just add me to your groups and enjoy 🎊
 
 Tap Help 🆘 To get more informations
 
