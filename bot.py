@@ -14,11 +14,8 @@ from database.users_chats_db import db
 from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR
 from utils import temp
 
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[logging.FileHandler('log.txt'), logging.StreamHandler()],
-    level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
-botStartTime = time.time()class Bot(Client):
+
 
     def __init__(self):
         super().__init__(
