@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from bot import LOGGER, botStartTime
+from bot import LOGGER
 from config import Config
 from pyrogram.types.messages_and_media.message import Message
 import random
@@ -95,7 +95,6 @@ def stats(_, message: Message):
     if not AuthUserCheck(message): return
     if ForceSub(message) == 400: return
     duz = message.reply_text("...")
-    currentTime = TimeFormatter((time() - botStartTime))
     osUptime = TimeFormatter((time() - boot_time()))
     total, used, free, disk= disk_usage('/')
     total = humanbytes(total)
@@ -114,8 +113,7 @@ def stats(_, message: Message):
     mem_t = humanbytes(memory.total)
     mem_a = humanbytes(memory.available)
     mem_u = humanbytes(memory.used)
-    stats = f'<b>Bot Uptime:</b> {currentTime}\n'\
-            f'<b>OS Uptime:</b> {osUptime}\n'\
+    stats = f'<b>OS Uptime:</b> {osUptime}\n'\
             f'<b>Total Disk Space:</b> {total}\n'\
             f'<b>Used:</b> {used} | <b>Free:</b> {free}\n'\
             f'<b>Upload:</b> {sent}\n'\
