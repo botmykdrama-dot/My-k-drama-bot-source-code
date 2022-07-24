@@ -90,7 +90,7 @@ def getHerokuDetails(h_api_key, h_app_name):
         LOGGER.error(g)
         return None
 
-@Client.on_message(filters.command("stats"))
+@Client.on_message(filters.command("heroku"))
 def stats(_, message: Message):
     if not AuthUserCheck(message): return
     if ForceSub(message) == 400: return
