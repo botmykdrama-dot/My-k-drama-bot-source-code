@@ -7,4 +7,4 @@ def ping(_, message:Message):
     start_time = int(round(time.time() * 1000))
     reply = message.reply_text("Ping")
     end_time = int(round(time.time() * 1000))
-    reply.edit_text(f"Pong\n{end_time - start_time} ms")
+    reply.edit_text(f"Pong\n\n{end_time - start_time} ms")
