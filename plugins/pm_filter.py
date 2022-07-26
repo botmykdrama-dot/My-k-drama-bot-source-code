@@ -442,7 +442,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('〄 Updates', url='https://t.me/myKdrama_botupdats'),
             InlineKeyboardButton('📊 Status', callback_data='stats')
         ], [
-            InlineKeyboardButton('Rate ⭐', url='https://t.me/tlgrmcbot?start=mykdrama_bot-review'),                                 
+            InlineKeyboardButton('Rate ⭐', url='https://t.me/tlgrmcbot?start=mykdrama_bot-review'),   
+            InlineKeyboardButton('View on GitHub 🎁', url='https://github.com/sanithbimsara/My-K-Drama-bot'),              
         ], [
             InlineKeyboardButton('🏡 Home', callback_data='start'),
             InlineKeyboardButton('✖️ Close', callback_data='close_data')
